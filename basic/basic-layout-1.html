@@ -8,6 +8,29 @@
     <style>
       body {
         display: grid;
+        grid-template-columns: 10em 3fr;
+        grid-template-rows: 6em 2fr 4em;
+        grid-template-areas:
+        "header header"
+        "nav main"
+        "footer footer";
+        gap: 10px;
+      }
+      header{
+        grid-area: header;
+        text-align: center;
+
+      }
+      nav{
+grid-area: nav;
+
+      }
+
+      main{
+grid-area: main;
+ }
+      footer{
+grid-area: footer;
       }
       /* Doe hier jouw ding! */
     </style>
